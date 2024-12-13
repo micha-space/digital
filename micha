@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio of Jooyearn</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #000428, #004e92);
+            color: white;
+        }
+        header {
+            text-align: center;
+            padding: 1em;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #00ffd5;
+        }
+        nav {
+            text-align: center;
+            margin: 1em 0;
+        }
+        nav a {
+            margin: 0 1em;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            color: #00ffd5;
+        }
+        section {
+            padding: 2em;
+            text-align: center;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            border: 2px solid #00ffd5;
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            height: 500px;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jooyearn's Portfolio</h1>
+    </header>
+
+    <nav>
+        <a href="#artwork">Artwork</a>
+        <a href="#travel-log">Travel Log</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#footprint">Footprint</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="artwork">
+        <h2>Artwork Gallery</h2>
+        <div class="gallery">
+            <img src="artwork1.jpg" alt="Artwork 1">
+            <img src="artwork2.jpg" alt="Artwork 2">
+            <img src="artwork3.jpg" alt="Artwork 3">
+            <p>(Add more images by replacing 'artwork#.jpg')</p>
+        </div>
+    </section>
+
+    <section id="travel-log">
+        <h2>Travel Log</h2>
+        <p>Follow my adventures on Instagram!</p>
+        <iframe src="https://www.instagram.com/jooyearn/embed"></iframe>
+    </section>
+
+    <section id="schedule">
+        <h2>Schedule</h2>
+        <p>Book a time with me using the calendar below:</p>
+        <iframe src="https://calendly.com/jooyearn"></iframe>
+    </section>
+
+    <section id="footprint">
+        <h2>Footprint</h2>
+        <p>Leave a message or check the board below:</p>
+        <textarea style="width: 80%; height: 200px;" placeholder="Leave your message..."></textarea>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="/submit-form" method="post">
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email" style="width: 80%; padding: 0.5em;"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" style="width: 80%; height: 100px; padding: 0.5em;"></textarea><br>
+            <button type="submit" style="margin-top: 1em; padding: 0.5em 2em; background-color: #00ffd5; border: none; color: black;">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Jooyearn. All rights reserved.</p>
+    </footer>
+</body>
+</html>
